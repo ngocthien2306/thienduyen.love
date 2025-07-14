@@ -77,28 +77,29 @@
 
         .main-heart {
             position: relative;
-            width: 450px;
-            height: 405px;
+            width: 600px;
+            height: 540px;
             margin: 40px auto;
             animation: mainHeartbeat 1.2s ease-in-out infinite;
             cursor: pointer;
             transition: all 0.4s ease;
-            filter: drop-shadow(0 0 50px rgba(234, 128, 176, 0.8));
+            filter: drop-shadow(0 0 60px rgba(255, 0, 102, 0.9));
         }
 
         .main-heart:hover {
             transform: scale(1.15);
-            filter: drop-shadow(0 0 60px rgba(234, 128, 176, 0.9)) 
-                    drop-shadow(0 0 100px rgba(255, 105, 180, 0.7))
-                    drop-shadow(0 0 140px rgba(255, 182, 193, 0.5));
+            filter: drop-shadow(0 0 80px rgba(255, 0, 102, 1)) 
+                    drop-shadow(0 0 120px rgba(255, 51, 133, 0.8))
+                    drop-shadow(0 0 160px rgba(255, 105, 180, 0.6));
             animation-duration: 0.8s;
         }
 
         .main-heart.clicked {
-            transform: scale(1.3);
-            filter: drop-shadow(0 0 80px rgba(234, 128, 176, 1)) 
-                    drop-shadow(0 0 120px rgba(255, 105, 180, 0.8))
-                    drop-shadow(0 0 160px rgba(255, 182, 193, 0.6));
+            transform: scale(1.35);
+            filter: drop-shadow(0 0 100px rgba(255, 0, 102, 1)) 
+                    drop-shadow(0 0 140px rgba(255, 51, 133, 0.9))
+                    drop-shadow(0 0 180px rgba(255, 105, 180, 0.7))
+                    drop-shadow(0 0 220px rgba(255, 182, 193, 0.5));
             animation-duration: 0.6s;
         }
 
@@ -106,49 +107,60 @@
         .main-heart::after {
             content: '';
             position: absolute;
-            width: 225px;
-            height: 360px;
+            width: 300px;
+            height: 480px;
             background: linear-gradient(135deg, 
-                #ea80b0 0%, 
-                #ff1744 25%, 
-                #e91e63 50%, 
-                #ea80b0 75%, 
-                #ff4569 100%);
-            border-radius: 225px 225px 0 0;
+                #ff0066 0%, 
+                #ff3385 15%,
+                #ea80b0 30%, 
+                #ff1744 45%, 
+                #e91e63 60%, 
+                #ff0066 75%,
+                #ff4569 90%,
+                #ff0066 100%);
+            border-radius: 300px 300px 0 0;
             transform: rotate(-45deg);
             transform-origin: 0 100%;
             box-shadow: 
-                0 30px 100px rgba(234, 128, 176, 0.9),
-                inset -10px -10px 25px rgba(0, 0, 0, 0.1),
-                inset 10px 10px 25px rgba(255, 255, 255, 0.3),
-                0 0 80px rgba(234, 128, 176, 0.7);
+                0 40px 120px rgba(255, 0, 102, 0.9),
+                inset -12px -12px 30px rgba(0, 0, 0, 0.15),
+                inset 12px 12px 30px rgba(255, 255, 255, 0.4),
+                0 0 100px rgba(255, 0, 102, 0.8),
+                0 0 150px rgba(255, 51, 133, 0.6);
             position: relative;
         }
 
         .main-heart::before {
             background: linear-gradient(135deg, 
-                #ea80b0 0%, 
-                #ff1744 25%, 
-                #e91e63 50%, 
-                #ea80b0 75%, 
-                #ff4569 100%);
+                #ff0066 0%, 
+                #ff3385 15%,
+                #ea80b0 30%, 
+                #ff1744 45%, 
+                #e91e63 60%, 
+                #ff0066 75%,
+                #ff4569 90%,
+                #ff0066 100%);
         }
 
         .main-heart::after {
-            left: 194px;
+            left: 258px;
             transform: rotate(45deg);
             transform-origin: 100% 100%;
             background: linear-gradient(45deg, 
-                #ea80b0 0%, 
-                #ff1744 25%, 
-                #e91e63 50%, 
-                #ea80b0 75%, 
-                #ff4569 100%);
+                #ff0066 0%, 
+                #ff3385 15%,
+                #ea80b0 30%, 
+                #ff1744 45%, 
+                #e91e63 60%, 
+                #ff0066 75%,
+                #ff4569 90%,
+                #ff0066 100%);
             box-shadow: 
-                0 30px 100px rgba(234, 128, 176, 0.9),
-                inset -10px -10px 25px rgba(0, 0, 0, 0.1),
-                inset 10px 10px 25px rgba(255, 255, 255, 0.3),
-                0 0 80px rgba(234, 128, 176, 0.7);
+                0 40px 120px rgba(255, 0, 102, 0.9),
+                inset -12px -12px 30px rgba(0, 0, 0, 0.15),
+                inset 12px 12px 30px rgba(255, 255, 255, 0.4),
+                0 0 100px rgba(255, 0, 102, 0.8),
+                0 0 150px rgba(255, 51, 133, 0.6);
         }
 
         @keyframes mainHeartbeat {
@@ -179,9 +191,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -55%);
-            width: 500px;
-            height: 450px;
-            border: 5px solid rgba(234, 128, 176, 0.5);
+            width: 650px;
+            height: 585px;
+            border: 6px solid rgba(255, 0, 102, 0.6);
             border-radius: 50%;
             animation: heartPulse 2s infinite ease-out;
             pointer-events: none;
@@ -191,7 +203,7 @@
             0% {
                 transform: translate(-50%, -55%) scale(0.8);
                 opacity: 1;
-                border-width: 6px;
+                border-width: 7px;
             }
             50% {
                 transform: translate(-50%, -55%) scale(1.4);
@@ -199,7 +211,7 @@
                 border-width: 4px;
             }
             100% {
-                transform: translate(-50%, -55%) scale(2.5);
+                transform: translate(-50%, -55%) scale(2.8);
                 opacity: 0;
                 border-width: 1px;
             }
@@ -209,8 +221,8 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 550px;
-            height: 495px;
+            width: 700px;
+            height: 630px;
             transform: translate(-50%, -55%);
             pointer-events: none;
         }
@@ -490,15 +502,118 @@
             transition: width 0.5s ease;
         }
 
+        .wedding-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            backdrop-filter: blur(15px);
+            border: 3px solid rgba(255, 20, 147, 0.3);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .wedding-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .wedding-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #ffd1dc, #ffb6c1);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(255, 182, 193, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .wedding-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(255, 182, 193, 0.6);
+        }
+
+        .wedding-emoji {
+            font-size: 3rem;
+            margin-right: 20px;
+        }
+
+        .wedding-card h4 {
+            color: #d63384;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+
+        .wedding-card p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .wedding-countdown {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 25px;
+        }
+
+        .proposal-btn {
+            background: linear-gradient(45deg, #ff006e, #8338ec);
+            animation: proposalPulse 2s infinite;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        @keyframes proposalPulse {
+            0% { 
+                box-shadow: 0 8px 25px rgba(255, 0, 110, 0.4);
+                transform: translateY(0);
+            }
+            50% { 
+                box-shadow: 0 15px 40px rgba(255, 0, 110, 0.8);
+                transform: translateY(-2px);
+            }
+            100% { 
+                box-shadow: 0 8px 25px rgba(255, 0, 110, 0.4);
+                transform: translateY(0);
+            }
+        }
+
+        .proposal-btn.accepted {
+            background: linear-gradient(45deg, #00d4aa, #00b894);
+            animation: acceptedGlow 1s infinite;
+        }
+
+        @keyframes acceptedGlow {
+            0%, 100% { box-shadow: 0 8px 25px rgba(0, 212, 170, 0.6); }
+            50% { box-shadow: 0 15px 40px rgba(0, 212, 170, 1); }
+        }
+
         @media (max-width: 768px) {
             .main-title { font-size: 2.5rem; }
-            .main-heart { width: 320px; height: 288px; }
+            .main-heart { width: 400px; height: 360px; }
             .main-heart::before,
-            .main-heart::after { width: 160px; height: 256px; }
-            .main-heart::after { left: 138px; }
-            .heart-pulse-ring { width: 360px; height: 324px; }
-            .heart-sparkles { width: 400px; height: 360px; }
+            .main-heart::after { width: 200px; height: 320px; }
+            .main-heart::after { left: 172px; }
+            .heart-pulse-ring { width: 450px; height: 405px; }
+            .heart-sparkles { width: 500px; height: 450px; }
             .counter-grid { grid-template-columns: repeat(2, 1fr); }
+            .wedding-details { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -507,10 +622,10 @@
     <div class="floating-hearts" id="floating-hearts"></div>
     
     <div class="container">
-        <h1 class="main-title">💕 Đếm Ngày Yêu 💕</h1>
+        <h1 class="main-title">💕 Love Day Counter 💕</h1>
         
         <div class="start-date">
-            🌟 Bắt đầu từ: 12/7/2025 🌟
+            🌟 Our love started from: 12/7/2025 🌟
         </div>
         
         <div class="main-heart" onclick="explodeHearts(event)">
@@ -560,6 +675,53 @@
             <button class="btn" onclick="celebrate()">🎉 Celebrate Our Love! 🎉</button>
             <button class="btn" onclick="sendLove()">💌 Send Love 💌</button>
             <button class="btn" onclick="showSurprise()">🎁 Surprise! 🎁</button>
+            <button class="btn proposal-btn" onclick="proposeMarriage()" id="proposalBtn">💍 Đồng ý lấy em nha, Yes 💍</button>
+        </div>
+
+        <div class="wedding-section" id="weddingSection" style="display: none;">
+            <h3 style="text-align: center; color: #d63384; margin-bottom: 25px; font-size: 2rem;">
+                🎄💒 Christmas Wedding 2028 💒🎄
+            </h3>
+            <div class="wedding-details">
+                <div class="wedding-card">
+                    <div class="wedding-emoji">📅</div>
+                    <div>
+                        <h4>Wedding Date</h4>
+                        <p>December 25, 2028 (Christmas Day)</p>
+                        <p>The most magical day of the year! 🎄✨</p>
+                    </div>
+                </div>
+                <div class="wedding-card">
+                    <div class="wedding-emoji">⛪</div>
+                    <div>
+                        <h4>Ceremony</h4>
+                        <p>A beautiful Christmas-themed wedding</p>
+                        <p>Snow, lights, and eternal love! ❄️💕</p>
+                    </div>
+                </div>
+                <div class="wedding-card">
+                    <div class="wedding-emoji">💐</div>
+                    <div>
+                        <h4>Theme</h4>
+                        <p>Winter Wonderland Romance</p>
+                        <p>Red roses & white snow magic! 🌹❄️</p>
+                    </div>
+                </div>
+                <div class="wedding-card">
+                    <div class="wedding-emoji">🎊</div>
+                    <div>
+                        <h4>Celebration</h4>
+                        <p>Christmas & Wedding combined!</p>
+                        <p>Double the joy, double the love! 🎄💖</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wedding-countdown" id="weddingCountdown">
+                <h4 style="text-align: center; color: #d63384; margin: 20px 0;">
+                    ⏰ Countdown to Our Big Day ⏰
+                </h4>
+                <div id="weddingTimer" style="text-align: center; font-size: 1.2rem; color: #e91e63;"></div>
+            </div>
         </div>
     </div>
 
@@ -579,9 +741,12 @@
             { days: 500, emoji: '👑', text: '500 days - Love royalty!' },
             { days: 730, emoji: '💍', text: '2 years - Ready for engagement!', special: true },
             { days: 1000, emoji: '🚀', text: '1000 days - Love to the universe!' },
-            { days: 1095, emoji: '💒', text: '3 years - Planning our future!', special: true },
-            { days: 1268, emoji: '👰🤵', text: 'Dec 31, 2028 - Our Wedding Day!', special: true }
+            { days: 1095, emoji: '💒', text: '3 years - Planning our future!', special: true }
         ];
+
+        const hiddenWeddingMilestone = { days: 1262, emoji: '🎄👰🤵', text: 'Christmas Day 2028 - Our Wedding!', special: true, hidden: true };
+        
+        let showWeddingMilestone = false;
 
         const loveMessages = [
             "This love is as strong as a tsunami! 🌊💕",
@@ -629,15 +794,19 @@
 
         function updateHeartDisplay(days) {
             const heartDisplay = document.getElementById('heartDisplay');
+            const clicksLeft = Math.max(0, 1000 - heartClickCount);
+            
             if (days === 0) {
                 heartDisplay.innerHTML = `
                     <div style="font-size: 1.5rem;">💖</div>
                     <div style="font-size: 0.9rem;">First day!</div>
+                    <div style="font-size: 0.7rem; opacity: 0.8;">${heartClickCount}/1000 clicks</div>
                 `;
             } else {
                 heartDisplay.innerHTML = `
                     <div style="font-size: 1.5rem;">💖</div>
                     <div style="font-size: 0.9rem;">${days} days in love!</div>
+                    <div style="font-size: 0.7rem; opacity: 0.8;">${heartClickCount}/1000 clicks</div>
                 `;
             }
         }
@@ -658,9 +827,9 @@
             } else if (days < 100) {
                 message = `🌸 ${days} sweet days! Love blooms like spring! 🌸`;
             } else if (days >= 1200) {
-                message = `💒 Wedding countdown: ${daysUntilWedding} days until our big day (Dec 31, 2028)! 👰🤵`;
+                message = `🎄💒 Christmas Wedding countdown: ${daysUntilWedding} days until our big day (Dec 25, 2028)! 👰🤵`;
             } else if (days >= 730) {
-                message = `💍 ${days} royal days! Getting closer to our wedding day! 💒`;
+                message = `💍 ${days} royal days! Getting closer to our Christmas wedding! 🎄💒`;
             } else {
                 message = `👑 ${days} royal days! We are the king and queen of love! 👑`;
             }
@@ -672,7 +841,16 @@
             const milestonesList = document.getElementById('milestonesList');
             milestonesList.innerHTML = '';
             
-            milestones.forEach(milestone => {
+            // Tạo array milestones để hiển thị
+            let displayMilestones = [...milestones];
+            
+            // Thêm wedding milestone nếu đã unlock
+            if (showWeddingMilestone) {
+                displayMilestones.push(hiddenWeddingMilestone);
+                displayMilestones.sort((a, b) => a.days - b.days);
+            }
+            
+            displayMilestones.forEach(milestone => {
                 const milestoneItem = document.createElement('div');
                 milestoneItem.className = 'milestone-item';
                 
@@ -683,8 +861,8 @@
                     milestoneItem.classList.add('milestone-achieved');
                     if (milestone.special) {
                         // Wedding milestones có màu đặc biệt
-                        if (milestone.emoji === '💍' || milestone.emoji === '💒' || milestone.emoji === '👰🤵') {
-                            milestoneItem.style.background = 'linear-gradient(45deg, #ffd89b, #19547b)';
+                        if (milestone.emoji.includes('🎄') || milestone.emoji.includes('💍') || milestone.emoji.includes('💒') || milestone.emoji.includes('👰')) {
+                            milestoneItem.style.background = 'linear-gradient(45deg, #00d4aa, #00b894)';
                             milestoneItem.style.color = 'white';
                         } else {
                             milestoneItem.style.background = 'linear-gradient(45deg, #667eea, #764ba2)';
@@ -693,7 +871,7 @@
                 } else {
                     milestoneItem.classList.add('milestone-upcoming');
                     // Highlight wedding milestones sắp tới
-                    if (milestone.emoji === '💍' || milestone.emoji === '💒' || milestone.emoji === '👰🤵') {
+                    if (milestone.emoji.includes('🎄') || milestone.emoji.includes('💍') || milestone.emoji.includes('💒') || milestone.emoji.includes('👰')) {
                         milestoneItem.style.background = 'linear-gradient(45deg, #fff5ee, #ffd1dc)';
                         milestoneItem.style.border = '2px solid #ff69b4';
                     }
@@ -751,6 +929,18 @@
                 heart.classList.remove('clicked');
             }, 600);
 
+            // Check nếu đạt 1000 clicks
+            if (heartClickCount >= 1000 && !showWeddingMilestone) {
+                showWeddingMilestone = true;
+                document.getElementById('specialMessage').innerHTML = 
+                    '💖 1000 clicks! Your love has unlocked our wedding milestone! 💍✨';
+                updateMilestones(Math.floor((new Date() - startDate) / (1000 * 60 * 60 * 24)));
+                
+                // Tạo mega celebration
+                createProposalAcceptedEffect();
+                return;
+            }
+
             // Tạo explosion hearts
             for (let i = 0; i < 20; i++) {
                 const explosionHeart = document.createElement('div');
@@ -786,9 +976,15 @@
                 }, i * 100);
             }
 
-            // Random love message
+            // Random love message với hint về clicks
             const randomMessage = loveMessages[Math.floor(Math.random() * loveMessages.length)];
-            document.getElementById('specialMessage').innerHTML = randomMessage;
+            const clicksLeft = Math.max(0, 1000 - heartClickCount);
+            if (clicksLeft > 0) {
+                document.getElementById('specialMessage').innerHTML = 
+                    `${randomMessage}<br><small style="opacity: 0.8;">💝 ${clicksLeft} clicks left to unlock something special...</small>`;
+            } else {
+                document.getElementById('specialMessage').innerHTML = randomMessage;
+            }
 
             // Tạo wedding bells effect cho milestone cưới
             if (heartClickCount % 10 === 0) {
@@ -946,7 +1142,7 @@
 
         // Wedding countdown special message
         function getWeddingCountdown() {
-            const weddingDate = new Date('2028-12-31T00:00:00');
+            const weddingDate = new Date('2028-12-25T00:00:00');
             const now = new Date();
             const timeDiff = weddingDate - now;
             const daysUntilWedding = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
@@ -954,9 +1150,118 @@
             return daysUntilWedding;
         }
 
+        function updateWeddingTimer() {
+            const weddingDate = new Date('2028-12-25T00:00:00');
+            const now = new Date();
+            const timeDiff = weddingDate - now;
+            
+            const years = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 365));
+            const days = Math.floor((timeDiff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            const timerElement = document.getElementById('weddingTimer');
+            if (timerElement) {
+                timerElement.innerHTML = `
+                    🎄 ${years} years, ${days} days, ${hours} hours, ${minutes} minutes 🎄<br>
+                    <span style="font-size: 0.9rem; opacity: 0.8;">Until our Christmas Wedding! 💒✨</span>
+                `;
+            }
+        }
+
+        function proposeMarriage() {
+            const proposalBtn = document.getElementById('proposalBtn');
+            const weddingSection = document.getElementById('weddingSection');
+            
+            if (!showWeddingMilestone) {
+                showWeddingMilestone = true;
+                
+                // Update button
+                proposalBtn.innerHTML = '💚 Yes! I said Yes! 💚';
+                proposalBtn.classList.add('accepted');
+                
+                // Show wedding section
+                weddingSection.style.display = 'block';
+                updateWeddingTimer();
+                
+                // Update milestones
+                updateMilestones(Math.floor((new Date() - startDate) / (1000 * 60 * 60 * 24)));
+                
+                // Scroll to wedding section
+                weddingSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Create special proposal accepted effect
+                createProposalAcceptedEffect();
+                
+                // Update special message
+                document.getElementById('specialMessage').innerHTML = 
+                    '💍✨ SHE SAID YES! Our wedding milestone is now unlocked! 🎄💒';
+                    
+            } else {
+                // Toggle wedding section if already unlocked
+                const isHidden = weddingSection.style.display === 'none';
+                if (isHidden) {
+                    weddingSection.style.display = 'block';
+                    updateWeddingTimer();
+                    weddingSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    createChristmasWeddingEffect();
+                } else {
+                    weddingSection.style.display = 'none';
+                }
+            }
+        }
+
+        function createProposalAcceptedEffect() {
+            // Mega celebration với engagement & wedding emojis
+            const celebrationEmojis = ['💍', '💎', '👰', '🤵', '💒', '🎊', '🎉', '🌹', '💐', '🎄', '⭐', '✨'];
+            
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const emoji = document.createElement('div');
+                    emoji.innerHTML = celebrationEmojis[Math.floor(Math.random() * celebrationEmojis.length)];
+                    emoji.style.position = 'fixed';
+                    emoji.style.left = Math.random() * 100 + 'vw';
+                    emoji.style.top = '-50px';
+                    emoji.style.fontSize = '3rem';
+                    emoji.style.animation = 'float 8s linear forwards';
+                    emoji.style.pointerEvents = 'none';
+                    emoji.style.zIndex = '1000';
+                    document.body.appendChild(emoji);
+                    
+                    setTimeout(() => emoji.remove(), 8000);
+                }, i * 100);
+            }
+            
+            // Sound effect simulation với alert
+            setTimeout(() => {
+                alert('💍✨ CONGRATULATIONS! 🎉\n\nShe said YES! 👰🤵\nChristmas Wedding 2028 is officially happening! 🎄💒');
+            }, 1000);
+        }
+
+        function createChristmasWeddingEffect() {
+            const christmasEmojis = ['🎄', '⭐', '❄️', '🔔', '💒', '👰', '🤵', '💍', '🎊'];
+            
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const emoji = document.createElement('div');
+                    emoji.innerHTML = christmasEmojis[Math.floor(Math.random() * christmasEmojis.length)];
+                    emoji.style.position = 'fixed';
+                    emoji.style.left = Math.random() * 100 + 'vw';
+                    emoji.style.top = '-50px';
+                    emoji.style.fontSize = '2rem';
+                    emoji.style.animation = 'float 6s linear forwards';
+                    emoji.style.pointerEvents = 'none';
+                    emoji.style.zIndex = '1000';
+                    document.body.appendChild(emoji);
+                    
+                    setTimeout(() => emoji.remove(), 6000);
+                }, i * 200);
+            }
+        }
+
         function createWeddingEffect(centerX, centerY) {
-            // Tạo hiệu ứng wedding bells và confetti
-            const weddingEmojis = ['💍', '👰', '🤵', '💒', '🔔', '🎊', '🌹', '💐'];
+            // Tạo hiệu ứng Christmas wedding bells và confetti
+            const weddingEmojis = ['🎄', '💍', '👰', '🤵', '💒', '🔔', '🎊', '🌹', '💐', '❄️'];
             
             for (let i = 0; i < 25; i++) {
                 setTimeout(() => {
@@ -975,10 +1280,10 @@
                 }, i * 150);
             }
             
-            // Special wedding message with countdown
+            // Special Christmas wedding message with countdown
             const daysLeft = getWeddingCountdown();
             document.getElementById('specialMessage').innerHTML = 
-                `💒 Wedding countdown: Only ${daysLeft} days until December 31, 2028! 💍✨`;
+                `🎄💒 Christmas Wedding countdown: ${daysLeft} days until December 25, 2028! 👰🤵✨`;
         }
 
         function createHeartSparkles() {
@@ -1017,6 +1322,7 @@
         setInterval(updateCounter, 1000);
         setInterval(createFloatingHeart, 2000);
         setInterval(createHeartSparkles, 5000); // Sparkles mỗi 5 giây
+        setInterval(updateWeddingTimer, 60000); // Update wedding timer mỗi phút
         updateCounter(); // Chạy ngay lập tức
         
         // Khởi tạo heart canvas particles
